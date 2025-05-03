@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppies Lover</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .header {
+        background-color: #195774;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .banner {
+        background-color: black;
+        width: 100%;
+        height: 400px;
+      }
+
+      .banner img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        width: 80%;
+        align-self: center;
+        flex-grow: 1;
+        margin-top: 50px;
+      }
+
+      .content-items-wrapper {
+        display: flex;
+      }
+
+      .content-items {
+        height: 500px;
+        width: 33%;
+      }
+
+      .content-items-puppy-missing {
+        margin-right: 15px;
+        background-color: #ee4d65;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+
+      .content-items img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+
+
+      .content-text {
+        width: 100%;
+        height: 50px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content-text h1 
+      {
+        color: #000;
+      }
+
+      .content-hero {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .content-hero-items {
+        height: 700px;
+        flex-grow: 1;
+        background-color: cyan;
+      }
+
+      .content-hero-items img {
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .footer {
+        height: 200px;
+        width: 100%;
+        background-color: #195774;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Controls the main axis */
+        align-items: center; /* Controls the cross axis */
+      }
+
+      h1 {
+        color: #fff;
+      }
+
+      p {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Puppy lover page</h1>
+      </div>
+
+      <div class="banner">
+        <img src="assets/banner-puppies.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <div class="content-items-wrapper">
+          <div class="content-items" style="margin-right: 15px">
+            <img src="assets/puppy-1.jpg" alt="" />
+          </div>
+          <div class="content-items content-items-puppy-missing">
+            <h1>
+              Puppy <br />
+              Missing <br />
+              Here
+            </h1>
+          </div>
+          <div class="content-items">
+            <img src="assets/puppy-2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="content-text">
+          <h1>More Puppies</h1>
+        </div>
+
+        <div class="content-hero">
+          <div class="content-hero-items" style="margin-right: 3%">
+            <img src="assets/puppy-3.jpg" alt="" />
+          </div>
+          <div class="content-hero-items">
+            <img src="assets/puppy-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <h1>Developed By: Tamirat Abera</h1>
+      </footer>
+    </div>
+  </body>
+</html>
